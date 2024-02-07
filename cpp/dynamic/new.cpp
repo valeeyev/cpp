@@ -12,8 +12,8 @@ int main()
 
     *pointer = 3; // derefferencing, or like "hey pointer, go to that adress on the HEAP, then store 3", but you are storing address of that 3 in the "pointer" variable
 
-    cout << pointer << endl;  // expect the address
-    cout << *pointer << endl; // expect the value in the address
+    cout << pointer << endl; // expect the address
+    cout << *pointer;        // expect the value in the address
 
     delete pointer; // YOU HAVE TO free when you're done with this memory in the HEAP.
     return 0;
