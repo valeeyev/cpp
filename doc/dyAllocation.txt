@@ -1,0 +1,12 @@
+C++ da pointerlar.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int new = 
+
+
+
+return 0;
+}
