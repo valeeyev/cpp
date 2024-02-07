@@ -4,7 +4,7 @@ int main()
 {
     int a = 1; // this variable in STACK memory.
 
-    // difference of dynamic and static allocation memory: you can store only one integer to the int type, if you store about 4 billion in the int, even it may overflow, you can't store anymore.
+    // difference of dynamic and static allocation memory: you can store only one integer to the int type if you store about 4 billion in the int, even it may overflow, you can't store anymore.
 
     // but in the HEAP, using Pointers(dynamic allocation) you do not store a value, but address of it, anyway the value will stored in the HEAP, in its address, but you don't store it with pointers. You can store millions of adresses, not single one in integer.
 
