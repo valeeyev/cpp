@@ -10,6 +10,6 @@ int main()
     cout << a << endl;
     cout << b << endl;
     cout << *b << endl;
-
+    delete b;
     return 0;
 }
