@@ -4,6 +4,7 @@
     "iostream": "cpp",
     "stdio.h": "c",
     "string.h": "c",
-    "string": "cpp"
+    "string": "cpp",
+    "new": "cpp"
   }
 }
