@@ -1,8 +1,9 @@
 #include <iostream>
+#include <cstdint>
 using namespace std;
 int main()
 {
-    int *arr = new int[3];
+    uint8_t *arr = new uint8_t[3];
 
     if (arr == nullptr)
     {
@@ -15,7 +16,7 @@ int main()
 
     for (int i = 0; i < 3; i++)
     {
-        cout << &arr[i] << endl;
+        cout << (void *)&arr[i] << endl;
     }
 
     delete[] arr;
