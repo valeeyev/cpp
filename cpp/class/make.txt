@@ -1,0 +1,16 @@
+CC = g++
+CFLAGS = -Wall
+SRCS = file1.cpp file2.cpp file3.cpp  # Add your new source files here
+OBJS = $(SRCS:.cpp=.o)
+TARGET = my_program
+
+$(TARGET): $(OBJS)
+    $(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.cpp
+    $(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY: clean
+
+clean:
+    rm -f $(TARGET) $(OBJS)
