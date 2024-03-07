@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 const int length = 10;
-int copyArray(int massiv1[], int massiv2[], int length)
+void copyArray(int massiv1[], int massiv2[], int length)
 {
     for (int i = 0; i < length; i++)
     {

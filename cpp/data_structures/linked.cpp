@@ -8,6 +8,7 @@ struct node
     int age;
     node *ptr;
 };
+// mening comentim
 
 int main(int argc, char *argv[])
 {
