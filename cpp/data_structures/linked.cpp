@@ -26,4 +26,6 @@ int main(int argc, char *argv[])
         cout << print->number << " ";
         print = print->next;
     }
+
+    return 0;
 }
