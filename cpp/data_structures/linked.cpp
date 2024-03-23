@@ -1,9 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
+
 struct node
 {
-    int node_data;
+    int number;
     node *next;
 };
 
@@ -13,25 +14,16 @@ int main(int argc, char *argv[])
     for (int i = 1; i < argc; i++)
     {
         int data = atoi(argv[i]);
-        node *list = new node;
-        list->node_data = data;
-        list->next = head;
-        head = list;
+        node *theNode = new node;
+        theNode->number = data;
+        theNode->next = head;
+        head = theNode;
     }
-    node *ptr = head;
-    while (ptr != 0)
+    cout << "list: ";
+    node *print = head;
+    while (print != nullptr)
     {
-        cout << ptr->node_data << " ";
-        ptr = ptr->next;
+        cout << print->number << " ";
+        print = print->next;
     }
-    cout << endl;
-    // delete
-    while (head != nullptr)
-    {
-        node *temp = head;
-        head = head->next;
-        delete temp;
-    }
-
-    return 0;
 }
