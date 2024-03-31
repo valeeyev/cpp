@@ -9,7 +9,7 @@ int main()
 
     if (arr == nullptr)
     {
-        cerr << "Memory allocation failed!" << endl;
+        cout << "Memory allocation failed!" << endl;
         return 1;
     }
 
