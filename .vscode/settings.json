@@ -7,5 +7,6 @@
     "string": "cpp",
     "new": "cpp",
     "cstdint": "cpp"
-  }
+  },
+  "python.REPL.enableREPLSmartSend": false
 }
