@@ -1,4 +1,4 @@
-from cowsay import cow
+from cowsay import dragon
 
 name = input("ismingni kirit: ")
-cow(f"Salom, {name}")
+dragon(f"Salom, {name}")
